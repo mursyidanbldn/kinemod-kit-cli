@@ -1,12 +1,6 @@
 <div align="center">
 
-██╗  ██╗██╗███╗   ██╗███████╗███╗   ███╗ ██████╗ ██████╗       ██╗  ██╗██╗████████╗ 
-██║ ██╔╝██║████╗  ██║██╔════╝████╗ ████║██╔═══██╗██╔══██╗      ██║ ██╔╝██║╚══██╔══╝ 
-█████╔╝ ██║██╔██╗ ██║█████╗  ██╔████╔██║██║   ██║██║  ██║█████╗█████╔╝ ██║   ██║    
-██╔═██╗ ██║██║╚██╗██║██╔══╝  ██║╚██╔╝██║██║   ██║██║  ██║╚════╝██╔═██╗ ██║   ██║    
-██║  ██╗██║██║ ╚████║███████╗██║ ╚═╝ ██║╚██████╔╝██████╔╝      ██║  ██╗██║   ██║    
-╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚══════╝╚═╝     ╚═╝ ╚═════╝ ╚═════╝       ╚═╝  ╚═╝╚═╝   ╚═╝
-
+<img src="assets/banner_demo.gif" alt="KINEMOD-KIT Animated Banner">
 
 KINEMOD-KIT: Command-Line Interface
 
@@ -33,11 +27,6 @@ Fast & Efficient: A GUI-free, command-line interface (CLI) that allows for rapid
 Reproducible: Every analysis follows the same logic, ensuring consistent and scientifically defensible results.
 
 Full Control: Gives the user granular control over every aspect of the modeling and analysis process.
-
-<div align="center">
-<!-- Replace this placeholder with a GIF demo of your terminal app later -->
-<img src="https://www.google.com/search?q=https://placehold.co/800x400/2e3440/e5e9f0%3Ftext%3DYour%2BCLI%2BApp%2BDemo%2BHere%2B(GIF)" alt="Demo of KINEMOD-KIT CLI">
-</div>
 
 ✨ Key Features
 
@@ -91,7 +80,3 @@ Contributions are always welcome! If you have ideas for new features or find a b
 📄 License
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
-
-<p align="center">
-Built with ❤️ and a lot of coffee by <b>Rizky Mursyidan Baldan</b>
-</p>
