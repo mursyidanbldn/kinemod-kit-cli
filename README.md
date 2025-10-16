@@ -1,5 +1,13 @@
 <div align="center">
 
+<img src="assets/banner_demo.gif" alt="KINEMOD-KIT Animated Banner">
+
+KINEMOD-KIT: Command-Line Interface
+
+An integrated kinetic analysis workstation for Palm Oil Mill Effluent (POME) treatment data.
+
+</div>
+
 <p align="center">
 <img alt="Python Version" src="https://www.google.com/search?q=https://img.shields.io/badge/python-3.8%252B-blue%3Fstyle%3Dfor-the-badge%26logo%3Dpython">
 <img alt="License" src="https://www.google.com/search?q=https://img.shields.io/badge/license-MIT-green%3Fstyle%3Dfor-the-badge">
