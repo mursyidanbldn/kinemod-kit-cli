@@ -1,105 +1,74 @@
-<div align="center">
+# KINEMOD-KIT Terminal Interface Project
 
-<img src="assets/banner_demo.gif" alt="KINEMOD-KIT Animated Banner">
+# A Fully integrated kinetic modelling kit for UASB-Filtration-RBC effluent Prediction
 
-KINEMOD-KIT: Command-Line Interface
+> **Author's Note:** This Python code serves as the core analytical engine for my thesis research, focusing on the data analysis and kinetic modeling of a combined reactor system for treating Palm Oil Mill Effluent (POME).
 
-An integrated kinetic analysis workstation for Palm Oil Mill Effluent (POME) treatment data.
+KINEMOD-KIT is a terminal-based toolkit designed to provide a powerful suite of tools to model, validate, and analyze data from a three-stage POME treatment reactor (UASB-Filtration-RBC).
 
-</div>
-
-<p align="center">
-<img alt="Python Version" src="https://www.google.com/search?q=https://img.shields.io/badge/python-3.8%252B-blue%3Fstyle%3Dfor-the-badge%26logo%3Dpython">
-<img alt="License" src="https://www.google.com/search?q=https://img.shields.io/badge/license-MIT-green%3Fstyle%3Dfor-the-badge">
-<img alt="Status" src="https://www.google.com/search?q=https://img.shields.io/badge/status-stable-brightgreen%3Fstyle%3Dfor-the-badge">
-</p>
-
-UASB-FILTRATION-RBC REACTOR KINETIC MODELING KIT
-
-An Analytical Engine for POME Treatment Modeling
-
-</div>
-
-Author's Note: This platform serves as the core analytical engine for my thesis research, focusing on the data analysis and kinetic modeling of a combined reactor system for treating Palm Oil Mill Effluent (POME).
-
-KINEMOD-KIT is a terminal-based toolkit designed for engineers and researchers, providing a powerful suite of tools to model, validate, and analyze data from a three-stage POME treatment reactor (UASB-Filtration-RBC).
-
-Why KINEMOD-KIT?
+## Why KINEMOD-KIT?
 
 Wastewater treatment process data is often complex and noisy. Manual analysis using spreadsheets is time-consuming and prone to errors. KINEMOD-KIT was created to solve this by providing a structured and automated workflow, right from your terminal.
 
-Fast & Efficient: A GUI-free, command-line interface (CLI) that allows for rapid analysis and iteration.
+- A GUI-free, command-line interface (CLI) that allows for rapid analysis and iteration.  
+- Every analysis follows the same logic, ensuring consistent and scientifically defensible results.
+- Gives the user granular control over every aspect of the modeling and analysis process.
 
-Reproducible: Every analysis follows the same logic, ensuring consistent and scientifically defensible results.
+## ✨ Key Features
 
-Full Control: Gives the user granular control over every aspect of the modeling and analysis process.
+- **🔬 Segmented Modeling:** Each reactor stage (UASB, Filter, RBC) is modeled as a separate object for maximum modularity.
+ 
+- **⚙️ Automated Parameter Calibration:** Uses non-linear optimization algorithms to find the best-fit kinetic parameters from your data.
 
-► Engineer's Log: Stardate 2025.1
+- **📊 Complete Statistical Validation:** Automatically calculates R², RMSE, and ANOVA to evaluate model fit.
 
-Welcome to the engine room, fellow engineer. What you're looking at isn't just a Python script. It's a unified analytical workstation, forged for a singular purpose: to transmute the chaotic data streams of Palm Oil Mill Effluent (POME) treatment into actionable kinetic insight.
+- **🚀 Dual Sensitivity Analysis:** Equipped with Sobol (GSA) and Monte Carlo simulation methods to identify the most influential parameters.
 
-Forget cumbersome spreadsheets. Here, we operate via a sophisticated command-line interface (CLI), engineered for maximum efficiency and total control. Consider this your cockpit for modeling, analyzing, and visualizing the performance of a complex, three-stage reactor system.
+- **🖥️ Modern Terminal Interface:** Powered by `rich` for an interactive and visually appealing user experience.
 
-Prime Directive: To ingest raw field data and render it into solid model parameters, reliable predictions, and a deep, fundamental understanding of what's actually happening inside your reactors.
+- **🎨 Professional Visualization:** Generates publication-quality plots and heatmaps using `Seaborn`.
 
-► Core Systems & Operational Capabilities
+## Diagram of the workflow
+***this where you put the image of the diagram***
 
-This toolkit is segmented into several key operational modules, each precision-engineered for a specific task.
+## How to use the KINEMOD-KIT CLI
 
-🧠 Segmented Modeling Brain: Each treatment unit—UASB, Adsorption Filter, and RBC—is encapsulated as a distinct class. This isn't just code; it's a digital twin of each physical component, ensuring modularity and simplified debugging.
+### Installation
 
-⚙️ High-Precision Parameter Calibrator: Leverages non-linear optimization algorithms (differential_evolution & curve_fit) to autonomously extract kinetic parameters from your dataset. No more manual guesswork.
+Ensure you have **Python 3.8** or newer installed
 
-📊 Internal Validation Subroutines: Ships with a suite of statistical validation protocols (R², RMSE, ANOVA) to evaluate model fidelity. The machine checks its own work.
+1. Clone this repository
+```bash
+git clone https://github.com/mursyidanbldn/kinemod-kit-cli.git
+```
 
-🔬 Dual Sensitivity Analysis Module: Need to know which parameters are most volatile? Deploy Global Sensitivity Analysis (GSA) via Sobol methods or run Monte Carlo simulations to identify which variables exert the most influence on the final output.
-
-🕹️ Interactive Terminal Interface: All functionalities are accessed through an intuitive, text-based menu system powered by rich. It's fast, responsive, and free of GUI-induced latency.
-
-📈 Engineering-Grade Data Visualization: Generates high-quality plots (Time-Series, Parity, Heatmaps) using Seaborn and Matplotlib for clear, professional presentation of results.
-
-► Ignition Sequence: How to Fire Up the Engine
-
-Ready to engage? Follow the protocol below to bring the system online in your local workstation.
-
-1. Acquire the Blueprints (Clone the Repository):
-Open your terminal and execute the following command.
-
-git clone [https://github.com/mursyidanbldn/kinemod-kit-cli.git](https://github.com/mursyidanbldn/kinemod-kit-cli.git)
+2. Navigate into the project directory
+```bash
 cd kinemod-kit-cli
+```
 
-
-
-2. Install Required Components (Install Dependencies):
-Ensure you have Python 3.8+ operational. Then, install all necessary sub-components from the requirements.txt manifest.
-
+3. Install all required libraries
+```bash
 pip install -r requirements.txt
+```
 
-
-
-3. Engage the Main Reactor (Run the Script):
-Confirm your data file (Model_Data.csv) is co-located in the directory. Then, ignite the main process.
-
+### Usage
+Make sure your data file [Model_Data.csv](./Model_Data.csv) is located inside the project folder. Then, run the application:
+```bash
 python run_analysis.py
+```
+The application will load the data and present you with an interactive main menu to begin your work.
 
+## Tweak
 
+If you want to edit or tweak this project, **CLONE IT**, you dum dum.
 
-You will be greeted by the animated banner, and the main menu will materialize. Welcome to the cockpit.
+## Find a bug?
 
-► User Interface Schematics (Menu Navigation)
+If you found a bug or something that bother you and want me to find out, please submit the issue using issues tab above.
 
-Once the system is live, you will interface via the main menu. This is your command guide:
+## Known issues (Work in progress)
 
-[1] Data Exploration & Configuration: View summary statistics, visualize variable correlations in a heatmap, and inspect the current model configuration. Consider this your pre-flight diagnostic panel.
+The sensitivity analysis is a bit wonky, the menu is confusing, might need some rework.
 
-[2] Parameter Estimation: This is where the magic happens. Run a new estimation, load existing parameters from a .json file, or save your current calibration session.
-
-[3] Model Performance & Visualization: Once parameters are calibrated, this menu allows you to generate performance tables (R², etc.), time-series plots, and parity plots to assess model accuracy.
-
-[4] Sensitivity Analysis: Go deeper and stress-test your model. Run GSA or Monte Carlo analyses to understand parameter dynamics.
-
-[5] File & Data Management: Sanitize your working directory by deleting legacy result files (.json, .csv).
-
-[6] Exit: A graceful shutdown of the simulation core.
-
-Developed and engineered by Rizky Mursyidan Baldan (2025). Godspeed, and try not to break anything.
+<p align="center"> Built with ❤️ and a lot of coffee by <b>Rizky Mursyidan Baldan</b> </p>
