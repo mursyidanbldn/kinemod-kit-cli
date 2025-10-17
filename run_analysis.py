@@ -1,15 +1,14 @@
-# KINEMOD-KIT: Integrated Kinetic Modeling and Sensitivity Analysis of a Multi-Stage POME Treatment System
-# Created and Designed by: Rizky Mursyidan Baldan (2025)
-# Objective: This script presents a complete, object-oriented workflow for analyzing the performance
-# of a three-stage POME treatment reactor.
+# KINEMOD-KIT — Kinetic Modeling and Sensitivity Analysis for a 3‑Stage POME Treatment System
+# Author: Rizky Mursyidan Baldan (2025)
+# Purpose: End-to-end, object-oriented analysis of a UASB → Filter → RBC reactor train.
 #
-# Main Features:
-# 1. Object-Oriented Design: Each treatment unit (UASB, Filter, RBC) is a separate class.
-# 2. Robust Parameter Estimation: Uses 'curve_fit' for non-linear least squares optimization.
-# 3. Comprehensive Validation: Evaluates each stage using R², RMSE, and statistical ANOVA tests.
-# 4. Dual Sensitivity Analysis: Employs both GSA (Morris/Sobol) and Monte Carlo methods.
-# 5. Interactive UI: A full command-line interface for a dynamic user experience.
-# 6. Beautiful Visualizations: All plots are now rendered using Seaborn for a clean and professional look.
+# Highlights
+# - Modular design: each unit (UASB, Filter, RBC) is implemented as a separate class.
+# - Parameter fitting: non-linear least squares via curve_fit.
+# - Validation: R², RMSE, and ANOVA-based statistical checks.
+# - Sensitivity: global (Morris, Sobol) and Monte Carlo analyses.
+# - CLI experience: interactive terminal interface.
+# - Visualization: plots rendered with Seaborn.
 
 # ==============================================================================
 # 1. Import Libraries
