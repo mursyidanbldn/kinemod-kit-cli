@@ -1,6 +1,10 @@
 # KINEMOD-KIT Terminal Interface Project
 
-# A Fully integrated kinetic modelling kit for UASB-Filtration-RBC effluent Prediction
+<p align="center">
+  <img src="asset/banner_header.gif" alt="Project Banner" width="1000"/>
+</p>
+
+## A Fully integrated kinetic modelling kit for UASB-Filtration-RBC effluent Prediction
 
 > **Author's Note:** This Python code serves as the core analytical engine for my thesis research, focusing on the data analysis and kinetic modeling of a combined reactor system for treating Palm Oil Mill Effluent (POME).
 
@@ -29,7 +33,9 @@ Wastewater treatment process data is often complex and noisy. Manual analysis us
 - **🎨 Professional Visualization:** Generates publication-quality plots and heatmaps using `Seaborn`.
 
 ## Diagram of the workflow
-***this where you put the image of the diagram***
+<p align="center">
+  <img src="asset/diagram.svg" alt="Diagram" width="1000">
+</p>
 
 ## How to use the KINEMOD-KIT CLI
 
